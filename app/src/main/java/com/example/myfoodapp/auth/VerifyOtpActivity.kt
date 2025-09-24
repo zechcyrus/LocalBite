@@ -51,13 +51,30 @@ class VerifyOtpActivity : AppCompatActivity() {
             }
 
             lifecycleScope.launch {
-                val result = authRepository.verifyEmailOtp(email, code)
-                result.fold(
-                    onSuccess = {
-                        startActivity(Intent(this@VerifyOtpActivity, ComingSoonActivity::class.java).apply {
-                            flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
-                        })
-                        finish()
+                val verify = authRepository.verifyEmailOtp(email, code)
+                verify.fold(
+                    onSuccess = { session ->
+                        val upsert = authRepository.upsertUserProfile(
+                            session,
+                            UserProfileInput(
+                                email = email,
+                                name = name.ifEmpty { null },
+                                phone = phone.ifEmpty { null },
+                                address = address.ifEmpty { null },
+                                userType = userType
+                            )
+                        )
+                        upsert.fold(
+                            onSuccess = {
+                                startActivity(Intent(this@VerifyOtpActivity, ComingSoonActivity::class.java).apply {
+                                    flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                                })
+                                finish()
+                            },
+                            onFailure = { e ->
+                                Toast.makeText(this@VerifyOtpActivity, "Saved session but failed to save profile: ${e.message}", Toast.LENGTH_LONG).show()
+                            }
+                        )
                     },
                     onFailure = { e ->
                         Toast.makeText(this@VerifyOtpActivity, "Verification failed: ${e.message}", Toast.LENGTH_SHORT).show()
