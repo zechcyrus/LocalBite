@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Food Sharing</string>
+    
+    <!-- Welcome Screen -->
+    <string name="welcome_title">Welcome to Food Sharing</string>
+    <string name="welcome_subtitle">Share homemade food with your community</string>
+    <string name="btn_buy_food">Buy Food</string>
+    <string name="btn_sell_food">Sell Food</string>
+    
+    <!-- Authentication -->
+    <string name="login_title">Login</string>
+    <string name="register_title">Register</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="address">Address</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_register">Register</string>
+    <string name="btn_continue_as_buyer">Continue as Buyer</string>
+    <string name="btn_continue_as_cook">Continue as Cook</string>
+    <string name="already_have_account">Already have an account? Login</string>
+    <string name="dont_have_account">Don\'t have an account? Register</string>
+    <string name="user_type_buyer">Buyer</string>
+    <string name="user_type_cook">Cook</string>
+    <string name="select_user_type">Select User Type</string>
+</resources>

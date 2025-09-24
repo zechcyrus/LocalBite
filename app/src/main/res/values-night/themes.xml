@@ -1,0 +1,102 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Professional theme (Dark Mode) -->
+    <style name="Theme.MYFOODAPP" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/primary_red</item>
+        <item name="colorPrimaryVariant">@color/brand_primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/brand_secondary</item>
+        <item name="colorSecondaryVariant">@color/brand_accent</item>
+        <item name="colorOnSecondary">@color/white</item>
+        
+        <!-- Background colors -->
+        <item name="android:colorBackground">@color/surface_dark</item>
+        <item name="colorSurface">@color/surface_dark_elevated</item>
+        <item name="colorOnBackground">@color/text_primary_dark</item>
+        <item name="colorOnSurface">@color/text_primary_dark</item>
+        
+        <!-- Material Input Layout colors for better visibility -->
+        <item name="colorOnSurfaceVariant">@color/text_hint_dark</item>
+        <item name="colorOutline">@color/text_hint_dark</item>
+        <item name="android:textColorHint">@color/text_hint_dark</item>
+        <item name="colorControlNormal">@color/text_hint_dark</item>
+        <item name="colorControlHighlight">@color/primary_red</item>
+        
+        <!-- Additional Material Design 3 colors for TextInputLayout -->
+        <item name="colorOnSurface">@color/text_primary_dark</item>
+        <item name="colorPrimary">@color/primary_red</item>
+        <item name="materialThemeOverlay">@style/ThemeOverlay.MYFOODAPP.TextInputLayout</item>
+        
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">@color/primary_red</item>
+        <item name="android:navigationBarColor">@color/surface_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+        
+        <!-- Professional typography with Inter font -->
+        <item name="android:fontFamily">@font/inter</item>
+        <item name="fontFamily">@font/inter</item>
+        <item name="textAppearanceHeadline1">@style/TextAppearance.MYFOODAPP.Headline1.Dark</item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.MYFOODAPP.Headline2.Dark</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.MYFOODAPP.Body1.Dark</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.MYFOODAPP.Body2.Dark</item>
+    </style>
+    
+    <style name="Theme.MYFOODAPP.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/primary_red</item>
+        <item name="android:navigationBarColor">@color/surface_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    
+    <!-- Professional Typography Styles (Dark Mode) -->
+    <style name="TextAppearance.MYFOODAPP.Headline1.Dark" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/inter</item>
+        <item name="android:textColor">@color/text_primary_dark</item>
+        <item name="android:letterSpacing">-0.02</item>
+    </style>
+    
+    <style name="TextAppearance.MYFOODAPP.Headline2.Dark" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/inter</item>
+        <item name="android:textColor">@color/text_primary_dark</item>
+        <item name="android:letterSpacing">-0.01</item>
+    </style>
+    
+    <style name="TextAppearance.MYFOODAPP.Body1.Dark" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/inter</item>
+        <item name="android:textColor">@color/text_primary_dark</item>
+    </style>
+    
+    <style name="TextAppearance.MYFOODAPP.Body2.Dark" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/inter</item>
+        <item name="android:textColor">@color/text_secondary_dark</item>
+    </style>
+    
+    <!-- Dark mode specific styles -->
+    <style name="Widget.MYFOODAPP.TextInputLayout.Dark" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="hintTextColor">@color/text_hint_dark</item>
+        <item name="android:textColorHint">@color/text_hint_dark</item>
+        <item name="boxStrokeColor">@color/text_hint_dark</item>
+        <item name="placeholderTextColor">@color/text_hint_dark</item>
+        <item name="android:fontFamily">@font/inter</item>
+        <item name="fontFamily">@font/inter</item>
+    </style>
+    
+    <style name="Widget.MYFOODAPP.TextInputEditText.Dark" parent="Widget.MaterialComponents.TextInputEditText.OutlinedBox">
+        <item name="android:textColorHint">@color/text_hint_dark</item>
+        <item name="android:fontFamily">@font/inter</item>
+        <item name="fontFamily">@font/inter</item>
+    </style>
+    
+    <!-- Theme overlay for better TextInputLayout visibility -->
+    <style name="ThemeOverlay.MYFOODAPP.TextInputLayout" parent="">
+        <item name="colorOnSurface">@color/text_primary_dark</item>
+        <item name="colorOnSurfaceVariant">@color/text_hint_dark</item>
+        <item name="colorPrimary">@color/primary_red</item>
+        <item name="android:textColorHint">@color/text_hint_dark</item>
+        <item name="android:fontFamily">@font/inter</item>
+        <item name="fontFamily">@font/inter</item>
+    </style>
+</resources>

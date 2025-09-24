@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Professional card background with shadow -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- Shadow -->
+    <item android:top="2dp" android:left="2dp" android:right="2dp" android:bottom="6dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/shadow_light" />
+            <corners android:radius="16dp" />
+        </shape>
+    </item>
+    
+    <!-- Main card surface -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/surface_primary" />
+            <corners android:radius="16dp" />
+            <stroke
+                android:width="1dp"
+                android:color="@color/border_light" />
+        </shape>
+    </item>
+    
+</layer-list>

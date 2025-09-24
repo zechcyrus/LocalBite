@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Professional hero background with subtle gradient -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- Base clean background -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="linear"
+                android:angle="45"
+                android:startColor="@color/primary_red"
+                android:centerColor="@color/secondary_orange"
+                android:endColor="@color/primary_red_light" />
+        </shape>
+    </item>
+    
+    <!-- Subtle overlay for depth -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="linear"
+                android:angle="90"
+                android:startColor="#00000000"
+                android:centerColor="#10000000"
+                android:endColor="#20000000" />
+        </shape>
+    </item>
+    
+</layer-list>

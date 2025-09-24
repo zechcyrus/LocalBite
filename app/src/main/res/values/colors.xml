@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Core Colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+    
+    <!-- 🍽️ PROFESSIONAL FOOD DELIVERY COLORS 🍽️ -->
+    
+    <!-- Primary Brand Colors (Yellow Theme) -->
+    <color name="primary_red">#FFC107</color>          <!-- Main brand yellow -->
+    <color name="primary_red_dark">#FF8F00</color>     <!-- Darker yellow for pressed states -->
+    <color name="primary_red_light">#FFF59D</color>    <!-- Lighter yellow for accents -->
+    
+    <color name="secondary_orange">#FFB74D</color>     <!-- Warm amber -->
+    <color name="secondary_orange_dark">#FF9800</color> <!-- Darker amber -->
+    <color name="secondary_orange_light">#FFE0B2</color> <!-- Light amber -->
+    
+    <!-- Neutral Grays -->
+    <color name="gray_50">#FAFAFA</color>
+    <color name="gray_100">#F5F5F5</color>
+    <color name="gray_200">#EEEEEE</color>
+    <color name="gray_300">#E0E0E0</color>
+    <color name="gray_400">#BDBDBD</color>
+    <color name="gray_500">#9E9E9E</color>
+    <color name="gray_600">#757575</color>
+    <color name="gray_700">#616161</color>
+    <color name="gray_800">#424242</color>
+    <color name="gray_900">#212121</color>
+    
+    <!-- Background Colors -->
+    <color name="background_primary">#FFFFFF</color>
+    <color name="background_secondary">#FAFAFA</color>
+    <color name="background_tertiary">#F8F8F8</color>
+    
+    <!-- Surface Colors -->
+    <color name="surface_primary">#FFFFFF</color>
+    <color name="surface_elevated">#FFFFFF</color>
+    <color name="surface_overlay">#F9F9F9</color>
+    
+    <!-- Text Colors -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="text_tertiary">#BDBDBD</color>
+    <color name="text_white">#FFFFFF</color>
+    
+    <!-- Status Colors -->
+    <color name="success_green">#4CAF50</color>
+    <color name="warning_amber">#FF9800</color>
+    <color name="error_red">#F44336</color>
+    <color name="info_blue">#2196F3</color>
+    
+    <!-- Interactive Colors -->
+    <color name="button_primary">#FFC107</color>
+    <color name="button_primary_pressed">#FF8F00</color>
+    <color name="button_secondary">#FFB74D</color>
+    <color name="button_outline">#E0E0E0</color>
+    
+    <!-- Shadow Colors -->
+    <color name="shadow_light">#1A000000</color>
+    <color name="shadow_medium">#33000000</color>
+    <color name="shadow_dark">#4D000000</color>
+    
+    <!-- Border Colors -->
+    <color name="border_light">#F0F0F0</color>
+    <color name="border_medium">#E0E0E0</color>
+    <color name="border_focus">#FFC107</color>
+    
+    <!-- Special Colors -->
+    <color name="discount_green">#00C853</color>
+    <color name="rating_star">#FFD700</color>
+    <color name="delivery_blue">#1976D2</color>
+    
+    <!-- Legacy support -->
+    <color name="brand_primary">#FFC107</color>
+    <color name="brand_secondary">#FFB74D</color>
+    <color name="brand_accent">#FFF59D</color>
+    
+    <!-- Dark theme support -->
+    <color name="surface_dark">#121212</color>
+    <color name="surface_dark_elevated">#1E1E1E</color>
+    <color name="text_primary_dark">#FFFFFF</color>
+    <color name="text_secondary_dark">#B3FFFFFF</color>
+    <color name="text_hint_dark">#80FFFFFF</color>
+    
+    <!-- Additional support colors -->
+    <color name="overlay_dark">#80000000</color>
+    <color name="overlay_brand">#1AFFC107</color>
+    <color name="text_primary_light">#212121</color>
+    <color name="text_secondary_light">#757575</color>
+</resources>

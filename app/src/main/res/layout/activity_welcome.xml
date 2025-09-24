@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Professional Welcome Screen for Food Delivery App -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hero_bg"
+    tools:context=".WelcomeActivity">
+
+    <!-- Main content container -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/professional_card"
+        android:paddingHorizontal="32dp"
+        android:paddingVertical="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Welcome Title -->
+        <TextView
+            android:id="@+id/tvWelcomeTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="Welcome to FoodApp"
+            android:textColor="@color/text_primary"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Welcome Subtitle -->
+        <TextView
+            android:id="@+id/tvWelcomeSubtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.4"
+            android:text="Discover delicious food from local restaurants and home chefs"
+            android:textColor="@color/text_secondary"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvWelcomeTitle" />
+
+        <!-- Primary CTA Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnBuyFood"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/button_primary"
+            android:fontFamily="sans-serif-medium"
+            android:text="Order Food"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvWelcomeSubtitle" />
+
+        <!-- Secondary CTA Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSellFood"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_outline"
+            android:fontFamily="sans-serif-medium"
+            android:text="Become a Partner"
+            android:textColor="@color/primary_red"
+            android:textSize="16sp"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnBuyFood" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
