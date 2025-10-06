@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
-import com.example.myfoodapp.comingsoon.ComingSoonActivity
+import com.example.myfoodapp.MainActivity
 import com.example.myfoodapp.databinding.ActivityVerifyOtpBinding
 import kotlinx.coroutines.launch
 
@@ -53,7 +53,7 @@ class VerifyOtpActivity : AppCompatActivity() {
             lifecycleScope.launch {
                 val verify = authRepository.verifyEmailOtp(email, code)
                 verify.fold(
-                    onSuccess = { session ->
+                    onSuccess = { session -> 
                         val upsert = authRepository.upsertUserProfile(
                             session,
                             UserProfileInput(
@@ -66,7 +66,7 @@ class VerifyOtpActivity : AppCompatActivity() {
                         )
                         upsert.fold(
                             onSuccess = {
-                                startActivity(Intent(this@VerifyOtpActivity, ComingSoonActivity::class.java).apply {
+                                startActivity(Intent(this@VerifyOtpActivity, MainActivity::class.java).apply {
                                     flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                                 })
                                 finish()
@@ -84,5 +84,3 @@ class VerifyOtpActivity : AppCompatActivity() {
         }
     }
 }
-
-

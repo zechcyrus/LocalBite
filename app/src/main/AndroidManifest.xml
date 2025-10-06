@@ -40,7 +40,7 @@
             android:theme="@style/Theme.MYFOODAPP.NoActionBar" />
 
         <activity
-            android:name=".comingsoon.ComingSoonActivity"
+            android:name=".MainActivity"
             android:exported="false"
             android:theme="@style/Theme.MYFOODAPP.NoActionBar" />
 
